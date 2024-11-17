@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Synthesis App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Voice Synthesis App</h1>
+    <form id="uploadForm">
+      <label for="voiceFile">Upload Voice File (MP3/WAV, max 5MB):</label>
+      <input type="file" id="voiceFile" name="voiceFile" required>
+      <button type="submit">Upload</button>
+    </form>
+    <textarea id="textInput" placeholder="Enter text to synthesize (max 500 characters)" maxlength="500"></textarea>
+    <button id="synthesizeButton">Synthesize Voice</button>
+    <a id="downloadLink" style="display: none;" download>Download Synthesized Voice</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
